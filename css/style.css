@@ -4,6 +4,9 @@
   padding: 0;
 }
 
+body{
+  font-family: sans-serif;
+}
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -11,49 +14,58 @@
 }
 
 main {
-  height: 100%;
-  background-color: grey;
+  height: calc(100% - 90px);
 }
  .main-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 250px;
-  height: calc(100% - 90px);
+  float: left;
   padding: 20px;
   background-color: black;
   overflow-y: hidden;
 }
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+.logo-spotify {
+  display: flex;
+  justify-content: flex-start;
+}
+.logo-spotify li a img{
+  width: 70%;
+}
+.flex-container li a img{
+width: 10%;
+}
 .main-content {
   width: calc(100% - 250px);
-  height: calc(100% - 90px);
-  margin-left: 250px;
+  height: 100%;
+  float: left;
   background-color: rgb(19, 24, 34);
   overflow-y: scroll;
 }
 .main-top{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width:100%;
   height: 90px;
   background-color: rgb(8, 11, 18);
 }
 .button_upgrade{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  list-style: none;
   text-transform: uppercase;
 }
 .button_upgrade a{
   color: white;
   border: 1px solid white;
   border-radius: 30px;
-  padding: 10px 30px;
-  margin: 25px 5px;
+  padding: 10px 40px;
+  margin: 0px 5px;
+  text-decoration: none;
+  transform: scale(5px);
 }
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
   height: 90px;
       background-color: rgb(40, 40, 40);
