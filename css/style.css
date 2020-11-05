@@ -146,9 +146,6 @@ width: 80%;
   background-color: rgb(19, 24, 34);
   overflow-y: scroll;
 }
-.main_content_center{
-  padding-top: 90px;
-}
 .main-top{
   position: fixed;
   display: flex;
@@ -168,8 +165,42 @@ width: 80%;
   padding: 10px 40px;
   margin: 0px 250px;
   text-decoration: none;
-  transform: scale(5px);
 }
+.button_upgrade a:hover{
+  transform: scale(0.7);
+}
+
+.main_content_center{
+  padding-top: 90px;
+}
+.main_content_center h2{
+  color: white;
+  padding: 30px 30px;
+}
+#generi{
+  display: flex;
+  justify-content: center;
+}
+#generi ul{
+  list-style: none;
+  display: inline-block;
+}
+#generi ul li a{
+  text-decoration: none;
+  color: rgb(113, 113, 113);
+  padding: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+}
+#generi ul li a:hover{
+  color: white;
+}
+#generi ul li{
+  display: inline-block;
+}
+
 footer {
   position: fixed;
   width: 100%;
