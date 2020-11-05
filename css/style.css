@@ -172,10 +172,12 @@ width: 80%;
 
 .main_content_center{
   padding-top: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .main_content_center h2{
   color: white;
-  padding: 30px 30px;
+  padding: 30px 10px;
 }
 #generi{
   display: flex;
@@ -200,6 +202,31 @@ width: 80%;
 #generi ul li{
   display: inline-block;
 }
+#albums{
+  display: flex;
+  justify-content: space-around;
+}
+.album img{
+  width: 180px;
+  height: 180px;
+}
+.album img:hover{
+background: rgb(0, 0, 0, 0.5);
+}
+.album h3{
+  text-align: center;
+  padding: 10px;
+}
+.album p{
+  padding: 7px;
+  color: rgb(113, 113, 113);
+  text-align: center;
+}
+.album h3 a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
 
 footer {
   position: fixed;
@@ -207,6 +234,7 @@ footer {
   height: 90px;
   background-color: rgb(40, 40, 40);
 }
+
 @@media all and (max-height: 767px) {
   #playlist{
     height: 60%;
