@@ -26,6 +26,10 @@ main {
 .nav-logo img{
 width: 80%;
 }
+.logo-xs{
+  width: 80px;
+  color: white;
+}
 .nav-menu ul{
   list-style: none;
 }
@@ -139,8 +143,6 @@ width: 80%;
   margin-right: 10px;
   margin-top: 20px;
 }
-
-
 .main-content {
   width: calc(100% - 250px);
   height: 100%;
@@ -315,9 +317,9 @@ footer {
 }
 .player-controller{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 55%;
+  width: 40%;
   height: 100%;
   padding: 10px;
   flex-shrink: 0;
@@ -328,7 +330,7 @@ footer {
 }
 .player-controller ul li a{
   color: white;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 .play_btn{
   font-size: 25px;
@@ -338,7 +340,7 @@ footer {
 }
 .player-audio{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 250px;
   height: 100%;
@@ -375,23 +377,40 @@ footer {
   .main-nav{
     width: 50px;
   }
+  .nav-log{
+    display: none;
+  }
   .nav-logo{
     display: none;
   }
-   .nav-playlist{
+  .nav-playlist{
     display: none;
   }
-  
-}
-
+  .nav_bottom span{
+    display: none;
+  }
+  .nav_bottom br{
+    display: none;
+  }
+  .nav_bottom img{
+    width: 100%;
+  }
+  .nav-menu span{
+    display: none;
+  }
+  .nav-menu img{
+    width: 130%;
+  }
   .main-content{
     width: calc(100% - 50px);
   }
   .main-top{
     width: calc(100% - 50px);
   }
-
 }
-@media screen and (min-width:767px){
 
+@media screen and (min-width:767px){
+  .logo-xs{
+    display: none;
+  }
 }
