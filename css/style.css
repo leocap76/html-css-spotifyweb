@@ -163,7 +163,6 @@ width: 80%;
   border: 1px solid white;
   border-radius: 30px;
   padding: 10px 40px;
-  margin: 0px 250px;
   text-decoration: none;
 }
 .button_upgrade a:hover{
@@ -207,7 +206,10 @@ width: 80%;
 }
 #albums{
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.album{
+  width: calc(100% / 6);
 }
 .album img{
   width: 180px;
@@ -249,14 +251,51 @@ background: rgb(0, 0, 0, 0.5);
 
 footer {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 90px;
   background-color: rgb(40, 40, 40);
 }
-
+.song-data{
+  width: 250px;
+  height: 100%;
+  background-color: yellow;
+}
+.player-controller{
+  width: 40%;
+  height: 100%;
+  padding: 10px;
+  background-color: purple;
+  flex-shrink: 0;
+}
+.player-audio{
+  width: 250px;
+  height: 100%;
+  background-color: lime;
+}
 @@media all and (max-height: 767px) {
   #playlist{
     height: 60%;
     overflow: auto;
+  }
+}
+@media screen and (max-width: 1199px){
+  .album{
+    width: calc(100%/2);
+  }
+}
+
+@media screen and (max-width:991px){
+  .album{
+    width: calc(100%/2);
+  }
+}
+@media screen and (max-width:767px){
+  .main-nav{
+    width: 50px;
+  }
+  .main-content{
+    width: calc (100%-50px);
   }
 }
